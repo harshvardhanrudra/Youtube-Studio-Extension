@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Studio Tag Assistant",
+  "version": "1.0",
+  "description": "Assists with adding tags in YouTube Studio",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "sidePanel",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+   "*://studio.youtube.com/*/edit*",  
+    "*://studio.youtube.com/*/upload*"  
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://studio.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Open Side Panel"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

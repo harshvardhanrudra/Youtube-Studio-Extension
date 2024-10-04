@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Studio Tag Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #FF0000;
+            margin-top: 0;
+        }
+        select, input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #CC0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Tag Assistant</h2>
+        <form id="sidePanelForm">
+            <!-- Content Type Dropdown -->
+            <select id="contentTypeDropdown" required>
+                <option value="">Select a Content Type</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+
+            <!-- VP Dropdown -->
+            <select id="vpDropdown" required>
+                <option value="">Select a VP</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+
+            <!-- VU Dropdown -->
+            <select id="vuDropdown" required>
+                <option value="">Select a VU</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+
+            <!-- Category Dropdown -->
+            <select id="categoryDropdown" required>
+                <option value="">Select a Category</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+
+            <!-- Agency Dropdown -->
+            <select id="agencyDropdown" required>
+                <option value="">Select an Agency</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+          
+
+             
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="sidepanel.js"></script>
+</body>
+</html>
